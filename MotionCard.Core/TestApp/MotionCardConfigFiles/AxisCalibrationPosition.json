@@ -1,0 +1,30 @@
+﻿{
+  "Axis1": [
+    {
+      "PositionName": "A",
+      "PositionValue": 100
+    },
+    {
+      "PositionName": "B",
+      "PositionValue": 100
+    },
+    {
+      "PositionName": "C",
+      "PositionValue": 100
+    }
+  ],
+  "Axis2": [
+    {
+      "PositionName": "A",
+      "PositionValue": 100
+    },
+    {
+      "PositionName": "B",
+      "PositionValue": 100
+    },
+    {
+      "PositionName": "C",
+      "PositionValue": 100
+    }
+  ]
+}

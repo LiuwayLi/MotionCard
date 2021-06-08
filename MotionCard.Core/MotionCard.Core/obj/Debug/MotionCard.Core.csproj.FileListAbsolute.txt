@@ -1,0 +1,8 @@
+C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\MotionCard.Core\bin\Debug\MotionCard.Core.dll
+C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\MotionCard.Core\bin\Debug\MotionCard.Core.pdb
+C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\MotionCard.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\MotionCard.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.csproj.CopyComplete
+C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.dll
+C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.pdb
