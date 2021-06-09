@@ -30,19 +30,19 @@ namespace MotionUctrls
         private void InitializeComponent()
         {
             this.btnHome = new HZH_Controls.Controls.UCBtnExt();
-            this.ucSignalLamp1 = new HZH_Controls.Controls.UCSignalLamp();
+            this.lampORG = new HZH_Controls.Controls.UCSignalLamp();
             this.label1 = new System.Windows.Forms.Label();
-            this.ucSignalLamp2 = new HZH_Controls.Controls.UCSignalLamp();
+            this.lampELP = new HZH_Controls.Controls.UCSignalLamp();
             this.label2 = new System.Windows.Forms.Label();
-            this.ucSignalLamp3 = new HZH_Controls.Controls.UCSignalLamp();
+            this.lampELN = new HZH_Controls.Controls.UCSignalLamp();
             this.label3 = new System.Windows.Forms.Label();
-            this.ucSignalLamp4 = new HZH_Controls.Controls.UCSignalLamp();
+            this.lampMoving = new HZH_Controls.Controls.UCSignalLamp();
             this.label4 = new System.Windows.Forms.Label();
-            this.ucSignalLamp5 = new HZH_Controls.Controls.UCSignalLamp();
+            this.lampALM = new HZH_Controls.Controls.UCSignalLamp();
             this.label5 = new System.Windows.Forms.Label();
-            this.ucSignalLamp6 = new HZH_Controls.Controls.UCSignalLamp();
+            this.lampHomed = new HZH_Controls.Controls.UCSignalLamp();
             this.label6 = new System.Windows.Forms.Label();
-            this.ucSwitch1 = new HZH_Controls.Controls.UCSwitch();
+            this.switchEnable = new HZH_Controls.Controls.UCSwitch();
             this.txtDisplayName = new System.Windows.Forms.TextBox();
             this.btnClrAlm = new HZH_Controls.Controls.UCBtnExt();
             this.btnStop = new HZH_Controls.Controls.UCBtnExt();
@@ -85,19 +85,19 @@ namespace MotionUctrls
             this.btnHome.TipsText = "";
             this.btnHome.BtnClick += new System.EventHandler(this.btnHome_BtnClick);
             // 
-            // ucSignalLamp1
+            // lampORG
             // 
-            this.ucSignalLamp1.BackColor = System.Drawing.Color.White;
-            this.ucSignalLamp1.IsHighlight = false;
-            this.ucSignalLamp1.IsShowBorder = false;
-            this.ucSignalLamp1.LampColor = new System.Drawing.Color[] {
+            this.lampORG.BackColor = System.Drawing.Color.White;
+            this.lampORG.IsHighlight = false;
+            this.lampORG.IsShowBorder = false;
+            this.lampORG.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Lime};
-            this.ucSignalLamp1.Location = new System.Drawing.Point(291, 35);
-            this.ucSignalLamp1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucSignalLamp1.Name = "ucSignalLamp1";
-            this.ucSignalLamp1.Size = new System.Drawing.Size(24, 24);
-            this.ucSignalLamp1.TabIndex = 1;
-            this.ucSignalLamp1.TwinkleSpeed = 0;
+            this.lampORG.Location = new System.Drawing.Point(291, 35);
+            this.lampORG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lampORG.Name = "lampORG";
+            this.lampORG.Size = new System.Drawing.Size(24, 24);
+            this.lampORG.TabIndex = 1;
+            this.lampORG.TwinkleSpeed = 0;
             // 
             // label1
             // 
@@ -109,19 +109,19 @@ namespace MotionUctrls
             this.label1.TabIndex = 2;
             this.label1.Text = "ORG";
             // 
-            // ucSignalLamp2
+            // lampELP
             // 
-            this.ucSignalLamp2.BackColor = System.Drawing.Color.White;
-            this.ucSignalLamp2.IsHighlight = false;
-            this.ucSignalLamp2.IsShowBorder = false;
-            this.ucSignalLamp2.LampColor = new System.Drawing.Color[] {
+            this.lampELP.BackColor = System.Drawing.Color.White;
+            this.lampELP.IsHighlight = false;
+            this.lampELP.IsShowBorder = false;
+            this.lampELP.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Red};
-            this.ucSignalLamp2.Location = new System.Drawing.Point(347, 35);
-            this.ucSignalLamp2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucSignalLamp2.Name = "ucSignalLamp2";
-            this.ucSignalLamp2.Size = new System.Drawing.Size(24, 24);
-            this.ucSignalLamp2.TabIndex = 1;
-            this.ucSignalLamp2.TwinkleSpeed = 0;
+            this.lampELP.Location = new System.Drawing.Point(347, 35);
+            this.lampELP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lampELP.Name = "lampELP";
+            this.lampELP.Size = new System.Drawing.Size(24, 24);
+            this.lampELP.TabIndex = 1;
+            this.lampELP.TwinkleSpeed = 0;
             // 
             // label2
             // 
@@ -133,19 +133,19 @@ namespace MotionUctrls
             this.label2.TabIndex = 2;
             this.label2.Text = "EL+";
             // 
-            // ucSignalLamp3
+            // lampELN
             // 
-            this.ucSignalLamp3.BackColor = System.Drawing.Color.White;
-            this.ucSignalLamp3.IsHighlight = false;
-            this.ucSignalLamp3.IsShowBorder = false;
-            this.ucSignalLamp3.LampColor = new System.Drawing.Color[] {
+            this.lampELN.BackColor = System.Drawing.Color.White;
+            this.lampELN.IsHighlight = false;
+            this.lampELN.IsShowBorder = false;
+            this.lampELN.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Red};
-            this.ucSignalLamp3.Location = new System.Drawing.Point(403, 35);
-            this.ucSignalLamp3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucSignalLamp3.Name = "ucSignalLamp3";
-            this.ucSignalLamp3.Size = new System.Drawing.Size(24, 24);
-            this.ucSignalLamp3.TabIndex = 1;
-            this.ucSignalLamp3.TwinkleSpeed = 0;
+            this.lampELN.Location = new System.Drawing.Point(403, 35);
+            this.lampELN.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lampELN.Name = "lampELN";
+            this.lampELN.Size = new System.Drawing.Size(24, 24);
+            this.lampELN.TabIndex = 1;
+            this.lampELN.TwinkleSpeed = 0;
             // 
             // label3
             // 
@@ -157,19 +157,19 @@ namespace MotionUctrls
             this.label3.TabIndex = 2;
             this.label3.Text = "EL-";
             // 
-            // ucSignalLamp4
+            // lampMoving
             // 
-            this.ucSignalLamp4.BackColor = System.Drawing.Color.White;
-            this.ucSignalLamp4.IsHighlight = false;
-            this.ucSignalLamp4.IsShowBorder = false;
-            this.ucSignalLamp4.LampColor = new System.Drawing.Color[] {
+            this.lampMoving.BackColor = System.Drawing.Color.White;
+            this.lampMoving.IsHighlight = false;
+            this.lampMoving.IsShowBorder = false;
+            this.lampMoving.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Lime};
-            this.ucSignalLamp4.Location = new System.Drawing.Point(515, 35);
-            this.ucSignalLamp4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucSignalLamp4.Name = "ucSignalLamp4";
-            this.ucSignalLamp4.Size = new System.Drawing.Size(24, 24);
-            this.ucSignalLamp4.TabIndex = 1;
-            this.ucSignalLamp4.TwinkleSpeed = 0;
+            this.lampMoving.Location = new System.Drawing.Point(515, 35);
+            this.lampMoving.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lampMoving.Name = "lampMoving";
+            this.lampMoving.Size = new System.Drawing.Size(24, 24);
+            this.lampMoving.TabIndex = 1;
+            this.lampMoving.TwinkleSpeed = 0;
             // 
             // label4
             // 
@@ -181,19 +181,19 @@ namespace MotionUctrls
             this.label4.TabIndex = 2;
             this.label4.Text = "Moving";
             // 
-            // ucSignalLamp5
+            // lampALM
             // 
-            this.ucSignalLamp5.BackColor = System.Drawing.Color.White;
-            this.ucSignalLamp5.IsHighlight = false;
-            this.ucSignalLamp5.IsShowBorder = false;
-            this.ucSignalLamp5.LampColor = new System.Drawing.Color[] {
+            this.lampALM.BackColor = System.Drawing.Color.White;
+            this.lampALM.IsHighlight = false;
+            this.lampALM.IsShowBorder = false;
+            this.lampALM.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Red};
-            this.ucSignalLamp5.Location = new System.Drawing.Point(459, 35);
-            this.ucSignalLamp5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucSignalLamp5.Name = "ucSignalLamp5";
-            this.ucSignalLamp5.Size = new System.Drawing.Size(24, 24);
-            this.ucSignalLamp5.TabIndex = 1;
-            this.ucSignalLamp5.TwinkleSpeed = 0;
+            this.lampALM.Location = new System.Drawing.Point(459, 35);
+            this.lampALM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lampALM.Name = "lampALM";
+            this.lampALM.Size = new System.Drawing.Size(24, 24);
+            this.lampALM.TabIndex = 1;
+            this.lampALM.TwinkleSpeed = 0;
             // 
             // label5
             // 
@@ -205,19 +205,19 @@ namespace MotionUctrls
             this.label5.TabIndex = 2;
             this.label5.Text = "ALM";
             // 
-            // ucSignalLamp6
+            // lampHomed
             // 
-            this.ucSignalLamp6.BackColor = System.Drawing.Color.White;
-            this.ucSignalLamp6.IsHighlight = false;
-            this.ucSignalLamp6.IsShowBorder = false;
-            this.ucSignalLamp6.LampColor = new System.Drawing.Color[] {
+            this.lampHomed.BackColor = System.Drawing.Color.White;
+            this.lampHomed.IsHighlight = false;
+            this.lampHomed.IsShowBorder = false;
+            this.lampHomed.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Lime};
-            this.ucSignalLamp6.Location = new System.Drawing.Point(571, 35);
-            this.ucSignalLamp6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucSignalLamp6.Name = "ucSignalLamp6";
-            this.ucSignalLamp6.Size = new System.Drawing.Size(24, 24);
-            this.ucSignalLamp6.TabIndex = 1;
-            this.ucSignalLamp6.TwinkleSpeed = 0;
+            this.lampHomed.Location = new System.Drawing.Point(571, 35);
+            this.lampHomed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lampHomed.Name = "lampHomed";
+            this.lampHomed.Size = new System.Drawing.Size(24, 24);
+            this.lampHomed.TabIndex = 1;
+            this.lampHomed.TwinkleSpeed = 0;
             // 
             // label6
             // 
@@ -229,33 +229,33 @@ namespace MotionUctrls
             this.label6.TabIndex = 2;
             this.label6.Text = "Homed";
             // 
-            // ucSwitch1
+            // switchEnable
             // 
-            this.ucSwitch1.BackColor = System.Drawing.Color.Transparent;
-            this.ucSwitch1.Checked = false;
-            this.ucSwitch1.FalseColor = System.Drawing.Color.Black;
-            this.ucSwitch1.FalseTextColr = System.Drawing.Color.White;
-            this.ucSwitch1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucSwitch1.Location = new System.Drawing.Point(147, 39);
-            this.ucSwitch1.Margin = new System.Windows.Forms.Padding(2);
-            this.ucSwitch1.Name = "ucSwitch1";
-            this.ucSwitch1.Size = new System.Drawing.Size(86, 33);
-            this.ucSwitch1.SwitchType = HZH_Controls.Controls.SwitchType.Ellipse;
-            this.ucSwitch1.TabIndex = 4;
-            this.ucSwitch1.Texts = new string[] {
+            this.switchEnable.BackColor = System.Drawing.Color.Transparent;
+            this.switchEnable.Checked = false;
+            this.switchEnable.FalseColor = System.Drawing.Color.Black;
+            this.switchEnable.FalseTextColr = System.Drawing.Color.White;
+            this.switchEnable.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.switchEnable.Location = new System.Drawing.Point(147, 39);
+            this.switchEnable.Margin = new System.Windows.Forms.Padding(2);
+            this.switchEnable.Name = "switchEnable";
+            this.switchEnable.Size = new System.Drawing.Size(86, 33);
+            this.switchEnable.SwitchType = HZH_Controls.Controls.SwitchType.Ellipse;
+            this.switchEnable.TabIndex = 4;
+            this.switchEnable.Texts = new string[] {
         "ON",
         "OFF"};
-            this.ucSwitch1.TrueColor = System.Drawing.Color.Lime;
-            this.ucSwitch1.TrueTextColr = System.Drawing.Color.White;
+            this.switchEnable.TrueColor = System.Drawing.Color.Lime;
+            this.switchEnable.TrueTextColr = System.Drawing.Color.White;
             // 
-            // txtAxisName
+            // txtDisplayName
             // 
             this.txtDisplayName.BackColor = System.Drawing.SystemColors.Highlight;
             this.txtDisplayName.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtDisplayName.ForeColor = System.Drawing.SystemColors.Window;
             this.txtDisplayName.Location = new System.Drawing.Point(-1, -1);
             this.txtDisplayName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDisplayName.Name = "txtAxisName";
+            this.txtDisplayName.Name = "txtDisplayName";
             this.txtDisplayName.ReadOnly = true;
             this.txtDisplayName.Size = new System.Drawing.Size(620, 29);
             this.txtDisplayName.TabIndex = 8;
@@ -340,6 +340,7 @@ namespace MotionUctrls
             this.btnRel.TabStop = false;
             this.btnRel.TipsColor = System.Drawing.SystemColors.Highlight;
             this.btnRel.TipsText = "";
+            this.btnRel.BtnClick += new System.EventHandler(this.btnRel_BtnClick);
             // 
             // btnAbs
             // 
@@ -366,6 +367,7 @@ namespace MotionUctrls
             this.btnAbs.TabStop = false;
             this.btnAbs.TipsColor = System.Drawing.SystemColors.Highlight;
             this.btnAbs.TipsText = "";
+            this.btnAbs.BtnClick += new System.EventHandler(this.btnAbs_BtnClick);
             // 
             // udTargetDistance
             // 
@@ -520,24 +522,25 @@ namespace MotionUctrls
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnClrAlm);
             this.Controls.Add(this.txtDisplayName);
-            this.Controls.Add(this.ucSwitch1);
+            this.Controls.Add(this.switchEnable);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ucSignalLamp6);
-            this.Controls.Add(this.ucSignalLamp5);
-            this.Controls.Add(this.ucSignalLamp4);
-            this.Controls.Add(this.ucSignalLamp3);
-            this.Controls.Add(this.ucSignalLamp2);
-            this.Controls.Add(this.ucSignalLamp1);
+            this.Controls.Add(this.lampHomed);
+            this.Controls.Add(this.lampALM);
+            this.Controls.Add(this.lampMoving);
+            this.Controls.Add(this.lampELN);
+            this.Controls.Add(this.lampELP);
+            this.Controls.Add(this.lampORG);
             this.Controls.Add(this.btnHome);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(10);
             this.Name = "AxisUctrl";
             this.Size = new System.Drawing.Size(618, 235);
+            this.Load += new System.EventHandler(this.AxisUctrl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.udTargetDistance)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -547,19 +550,19 @@ namespace MotionUctrls
         #endregion
 
         private HZH_Controls.Controls.UCBtnExt btnHome;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp1;
+        private HZH_Controls.Controls.UCSignalLamp lampORG;
         private System.Windows.Forms.Label label1;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp2;
+        private HZH_Controls.Controls.UCSignalLamp lampELP;
         private System.Windows.Forms.Label label2;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp3;
+        private HZH_Controls.Controls.UCSignalLamp lampELN;
         private System.Windows.Forms.Label label3;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp4;
+        private HZH_Controls.Controls.UCSignalLamp lampMoving;
         private System.Windows.Forms.Label label4;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp5;
+        private HZH_Controls.Controls.UCSignalLamp lampALM;
         private System.Windows.Forms.Label label5;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp6;
+        private HZH_Controls.Controls.UCSignalLamp lampHomed;
         private System.Windows.Forms.Label label6;
-        private HZH_Controls.Controls.UCSwitch ucSwitch1;
+        private HZH_Controls.Controls.UCSwitch switchEnable;
         private System.Windows.Forms.TextBox txtDisplayName;
         private HZH_Controls.Controls.UCBtnExt btnClrAlm;
         private HZH_Controls.Controls.UCBtnExt btnStop;

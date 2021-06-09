@@ -32,7 +32,6 @@ namespace TestApp
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.axisUctrl1 = new MotionUctrls.AxisUctrl();
             this.cylinderUctrl2 = new MotionUctrls.CylinderUctrl();
             this.diUctrl1 = new MotionUctrls.DIUctrl();
             this.doUctrl1 = new MotionUctrls.DOUctrl();
@@ -58,19 +57,6 @@ namespace TestApp
             this.button2.Text = "保存";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // axisUctrl1
-            // 
-            this.axisUctrl1.AxisName = "Turn tab";
-            this.axisUctrl1.BackColor = System.Drawing.Color.White;
-            this.axisUctrl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.axisUctrl1.DisplayName = "";
-            this.axisUctrl1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.axisUctrl1.Location = new System.Drawing.Point(35, 324);
-            this.axisUctrl1.Margin = new System.Windows.Forms.Padding(10);
-            this.axisUctrl1.Name = "axisUctrl1";
-            this.axisUctrl1.Size = new System.Drawing.Size(618, 235);
-            this.axisUctrl1.TabIndex = 6;
             // 
             // cylinderUctrl2
             // 
@@ -121,7 +107,6 @@ namespace TestApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 815);
-            this.Controls.Add(this.axisUctrl1);
             this.Controls.Add(this.cylinderUctrl2);
             this.Controls.Add(this.diUctrl1);
             this.Controls.Add(this.doUctrl1);
@@ -144,7 +129,6 @@ namespace TestApp
         private MotionUctrls.DOUctrl doUctrl1;
         private MotionUctrls.DIUctrl diUctrl1;
         private MotionUctrls.CylinderUctrl cylinderUctrl2;
-        private MotionUctrls.AxisUctrl axisUctrl1;
     }
 }
 
