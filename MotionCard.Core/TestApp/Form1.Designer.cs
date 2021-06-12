@@ -32,15 +32,11 @@ namespace TestApp
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.cylinderUctrl2 = new MotionUctrls.CylinderUctrl();
-            this.diUctrl1 = new MotionUctrls.DIUctrl();
-            this.doUctrl1 = new MotionUctrls.DOUctrl();
-            this.cylinderUctrl1 = new MotionUctrls.CylinderUctrl();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(58, 32);
+            this.button1.Location = new System.Drawing.Point(311, 220);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 74);
             this.button1.TabIndex = 0;
@@ -50,7 +46,7 @@ namespace TestApp
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(298, 32);
+            this.button2.Location = new System.Drawing.Point(551, 220);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(146, 74);
             this.button2.TabIndex = 1;
@@ -58,59 +54,11 @@ namespace TestApp
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // cylinderUctrl2
-            // 
-            this.cylinderUctrl2.BackColor = System.Drawing.Color.White;
-            this.cylinderUctrl2.CylinderName = null;
-            this.cylinderUctrl2.Location = new System.Drawing.Point(590, 44);
-            this.cylinderUctrl2.Name = "cylinderUctrl2";
-            this.cylinderUctrl2.Size = new System.Drawing.Size(272, 107);
-            this.cylinderUctrl2.TabIndex = 5;
-            // 
-            // diUctrl1
-            // 
-            this.diUctrl1.BackColor = System.Drawing.Color.White;
-            this.diUctrl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.diUctrl1.DIName = null;
-            this.diUctrl1.DisplayName = null;
-            this.diUctrl1.Location = new System.Drawing.Point(631, 157);
-            this.diUctrl1.MaximumSize = new System.Drawing.Size(220, 57);
-            this.diUctrl1.MinimumSize = new System.Drawing.Size(220, 57);
-            this.diUctrl1.Name = "diUctrl1";
-            this.diUctrl1.Size = new System.Drawing.Size(220, 57);
-            this.diUctrl1.TabIndex = 4;
-            // 
-            // doUctrl1
-            // 
-            this.doUctrl1.BackColor = System.Drawing.Color.White;
-            this.doUctrl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.doUctrl1.DIsplayName = null;
-            this.doUctrl1.DOName = null;
-            this.doUctrl1.Location = new System.Drawing.Point(540, 78);
-            this.doUctrl1.MaximumSize = new System.Drawing.Size(220, 57);
-            this.doUctrl1.MinimumSize = new System.Drawing.Size(220, 57);
-            this.doUctrl1.Name = "doUctrl1";
-            this.doUctrl1.Size = new System.Drawing.Size(220, 57);
-            this.doUctrl1.TabIndex = 3;
-            // 
-            // cylinderUctrl1
-            // 
-            this.cylinderUctrl1.BackColor = System.Drawing.Color.White;
-            this.cylinderUctrl1.CylinderName = "123";
-            this.cylinderUctrl1.Location = new System.Drawing.Point(58, 157);
-            this.cylinderUctrl1.Name = "cylinderUctrl1";
-            this.cylinderUctrl1.Size = new System.Drawing.Size(272, 107);
-            this.cylinderUctrl1.TabIndex = 2;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 815);
-            this.Controls.Add(this.cylinderUctrl2);
-            this.Controls.Add(this.diUctrl1);
-            this.Controls.Add(this.doUctrl1);
-            this.Controls.Add(this.cylinderUctrl1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -125,10 +73,6 @@ namespace TestApp
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private MotionUctrls.CylinderUctrl cylinderUctrl1;
-        private MotionUctrls.DOUctrl doUctrl1;
-        private MotionUctrls.DIUctrl diUctrl1;
-        private MotionUctrls.CylinderUctrl cylinderUctrl2;
     }
 }
 

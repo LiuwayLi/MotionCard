@@ -20,20 +20,34 @@ namespace MotionCard.Core
         private Dictionary<string, DIBase> _dis = new Dictionary<string, DIBase>();
         private Dictionary<string, DOBase> _dos = new Dictionary<string, DOBase>();
 
-        public Action<string, double> StartToFixedLengthMovement;
-        public Action<string> StartToHome;
-        public Action<string> StartToJog;
-        public Action<string, bool> StartToSetDOStatus;
+        public event Action<string, double> StartToFixedLengthMovement;
+        public event Action<string> StartToHome;
+        public event Action<string> StartToJog;
+        public event Action <string, bool> StartToSetDOStatus;
+
         public Action InitMotion;
         public Action DisposeMotion;
 
-        public void LoadCommonConfigFile(Encoding encoding)
+        public void LoadConfigFile()
+        {
+
+            string[] axisNames = _axis.Keys.ToArray();
+
+            foreach (var item in axisNames)
+            {
+                _axis[item] = _axis[item].Load();
+            }
+        }
+
+
+        public void SaveConfigToFile(bool overwrite = true)
         {
             foreach (var item in _axis.Keys)
             {
-                _axis[item].Load(encoding);
+                _axis[item].Save(overwrite);
             }
         }
+
 
         public AxisBase GetAxis(string axisName)
         {
@@ -50,19 +64,20 @@ namespace MotionCard.Core
             return _dos[doName];
         }
 
-        public void InitializeMotion()
+        public void Initialize()
         {
-            InitMotion.Invoke();
+            InitMotion?.Invoke();
         }
 
-        public void ReleaseMotion()
+        public void Release()
         {
-            DisposeMotion.Invoke();
+            DisposeMotion?.Invoke();
         }
 
         public void AddAxis(AxisBase axis)
         {
             _axis[axis.AxisName] = axis;
+            SaveConfigToFile(false);
         }
 
         public void AddDI(DIBase di)
@@ -74,9 +89,6 @@ namespace MotionCard.Core
         {
             _dos[@do.Name] = @do;
         }
-
-
-
 
         #region Axis
 

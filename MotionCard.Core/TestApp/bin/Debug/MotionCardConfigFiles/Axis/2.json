@@ -1,0 +1,15 @@
+﻿{
+  "Discription": null,
+  "Price": 0.0,
+  "AxisName": "2",
+  "DebugVelocity": {
+    "Start": 0.0,
+    "Stop": 0.0,
+    "Max": 0.0,
+    "TimeS": 0.0,
+    "TimeAcc": 0.0,
+    "TimeDec": 0.0
+  },
+  "MaxVelocity": 0.0,
+  "CalibrationPositions": []
+}

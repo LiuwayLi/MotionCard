@@ -16,3 +16,21 @@ C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\TestApp\bin\De
 C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\TestApp\obj\Debug\TestApp.csproj.CopyComplete
 C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\TestApp\obj\Debug\TestApp.exe
 C:\Users\Administrator\Desktop\MotionFinalVersion\MotionCard.Core\TestApp\obj\Debug\TestApp.pdb
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\bin\Debug\TestApp.exe.config
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\bin\Debug\TestApp.exe
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\bin\Debug\TestApp.pdb
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\bin\Debug\HZH_Controls.dll
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\bin\Debug\MotionCard.Core.dll
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\bin\Debug\MotionUctrls.dll
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\bin\Debug\Newtonsoft.Json.dll
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\bin\Debug\MotionCard.Core.pdb
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\bin\Debug\MotionUctrls.pdb
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\bin\Debug\Newtonsoft.Json.xml
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.Form1.resources
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.exe
+D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.pdb

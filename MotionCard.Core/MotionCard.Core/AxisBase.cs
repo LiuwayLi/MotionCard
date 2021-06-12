@@ -3,121 +3,18 @@ using System;
 using System.IO;
 using System.Text;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace MotionCard.Core
 {
-    class AxisBaseHelper : AxisBase
-    {
-        public override void AbsoluteMove(double targetPosition, Velocity velocity, bool waitStopped = true, double timeoutSeconds = double.PositiveInfinity, StopReason expectedStopReason = StopReason.Normal)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void CheckAxisArrived()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void CLearAlarm()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Enable(bool enable)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override double GetCurrentPosition()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override StopReason GetStopReason()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override Velocity GetVelocity()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool HasHomed()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Home()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool IsAlarming()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool IsEnabled()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool IsMoving()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool IsOnLmtN()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool IsOnLmtP()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool IsOnOrg()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool IsReady()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Jog(Velocity velocity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void MoveToCalibrationPosition(string calibrationPositionName, Velocity velocity, bool waitStopped = true, double timeoutSeconds = double.PositiveInfinity, StopReason expectedStopReason = StopReason.Normal)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void RelativeMove(double deltaPosition, Velocity velocity, bool waitStopped = true, double timeoutSeconds = double.PositiveInfinity, StopReason expectedStopReason = StopReason.Normal)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void SetVelocity(Velocity velocity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Stop()
-        {
-            throw new NotImplementedException();
-        }
-    }
     public abstract class AxisBase
     {
-        protected AxisBase()
+        protected AxisBase(string axisName)
         {
-            _directory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MotionCardConfigFile");
+            this.AxisName = axisName;
+
+            _directory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MotionCardConfigFiles","Axis");
+
             if (!Directory.Exists(_directory))
             {
                 Directory.CreateDirectory(_directory);
@@ -133,38 +30,41 @@ namespace MotionCard.Core
         protected double PositionError { get; set; }
         public Velocity DebugVelocity { get; set; }
         public double MaxVelocity { get; set; }
-        public CalibrationPosition[] CalibrationPositions { get; set; }
+        public List<CalibrationPosition> CalibrationPositions { get; set; } = new List<CalibrationPosition>() {};
 
-        public void Load(Encoding encoding)
+
+        public AxisBase Load()
         {
-            AxisBase axisBase = JsonConvert.DeserializeObject<AxisBaseHelper>(File.ReadAllText(Path.Combine(_directory, AxisName, ".json"), encoding));
-            this.AxisName = axisBase.AxisName;
-            this.CardNo = axisBase.CardNo;
-            this.AxisNo = axisBase.AxisNo;
-            this.PulseOutMode = axisBase.PulseOutMode;
-            this.PulsesPerUnit = axisBase.PulsesPerUnit;
-            this.PositionError = axisBase.PositionError;
-            this.DebugVelocity = axisBase.DebugVelocity;
-            this.MaxVelocity = axisBase.MaxVelocity;
-            this.CalibrationPositions = axisBase.CalibrationPositions;
+            return JsonConvert.DeserializeObject(File.ReadAllText(Path.Combine(_directory, $"{AxisName}.json"), Encoding.UTF8),GetType()) as AxisBase;
         }
 
-
+        #region 标定位置
         public double GetCalibrationPositionValue(string calibrationPositionName)
         {
             foreach (var item in CalibrationPositions)
             {
-                if(item.PositionName == calibrationPositionName)
+                if (item.PositionName == calibrationPositionName)
                 {
                     return item.PositionValue;
                 }
             }
             throw new ArgumentException($"在轴{AxisName}上不存在标定点位{calibrationPositionName}!");
         }
+        #endregion
 
-        public void Save(Encoding encoding)
+
+        public void Save(bool overwrite = true)
         {
-            File.WriteAllText(Path.Combine(_directory, AxisName, ".json"), JsonConvert.SerializeObject(this, Formatting.Indented), encoding);
+            string path = Path.Combine(_directory, $"{AxisName}.json");
+            if (!overwrite)
+            {
+                if (File.Exists(path))
+                {
+                    return;
+                }
+            }
+
+            File.WriteAllText(path, JsonConvert.SerializeObject(this, Formatting.Indented), Encoding.UTF8);
         }
 
         #region 轴信号
@@ -216,5 +116,8 @@ namespace MotionCard.Core
         public abstract void CLearAlarm();
         public abstract Velocity GetVelocity();
         public abstract void SetVelocity(Velocity velocity);
+        #region IO
+        
+        #endregion
     }
 }
