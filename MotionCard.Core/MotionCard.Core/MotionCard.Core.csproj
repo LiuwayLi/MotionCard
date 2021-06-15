@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="AxisBase.cs" />
     <Compile Include="CalibrationPositionReader.cs" />
-    <Compile Include="CommonAxisConfig.cs" />
     <Compile Include="Definitions\CalibrationPosition.cs" />
     <Compile Include="Definitions\CylinderStatus.cs" />
     <Compile Include="Definitions\StopMode.cs" />

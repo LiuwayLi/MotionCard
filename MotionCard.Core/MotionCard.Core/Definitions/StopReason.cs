@@ -2,6 +2,9 @@
 
 namespace MotionCard.Core.Definitions
 {
+    /// <summary>
+    /// 轴的停止原因
+    /// </summary>
     public enum StopReason
     {
         [Description("脉冲发送完毕正常停止")]

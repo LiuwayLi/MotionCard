@@ -26,7 +26,7 @@ namespace TestApp.VendorAxis
             throw new NotImplementedException();
         }
 
-        public override void CheckAxisArrived()
+        public override void CheckAxisArrived(double targetPosition)
         {
             throw new NotImplementedException();
         }
@@ -96,10 +96,7 @@ namespace TestApp.VendorAxis
             throw new NotImplementedException();
         }
 
-        public override bool IsReady()
-        {
-            throw new NotImplementedException();
-        }
+   
 
         public override void Jog(Velocity velocity)
         {

@@ -2,35 +2,26 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.IO;
 
 namespace MotionCard.Core
 {
     public class Motion
     {
+        private Motion()
+        {
+        }
 
-        private Motion() { }
         public static Motion Instance { get; } = new Motion();
 
         private Dictionary<string, AxisBase> _axis = new Dictionary<string, AxisBase>();
         private Dictionary<string, DIBase> _dis = new Dictionary<string, DIBase>();
         private Dictionary<string, DOBase> _dos = new Dictionary<string, DOBase>();
 
-        public event Action<string, double> StartToFixedLengthMovement;
-        public event Action<string> StartToHome;
-        public event Action<string> StartToJog;
-        public event Action <string, bool> StartToSetDOStatus;
-
         public Action InitMotion;
         public Action DisposeMotion;
 
         public void LoadConfigFile()
         {
-
             string[] axisNames = _axis.Keys.ToArray();
 
             foreach (var item in axisNames)
@@ -39,7 +30,6 @@ namespace MotionCard.Core
             }
         }
 
-
         public void SaveConfigToFile(bool overwrite = true)
         {
             foreach (var item in _axis.Keys)
@@ -47,7 +37,6 @@ namespace MotionCard.Core
                 _axis[item].Save(overwrite);
             }
         }
-
 
         public AxisBase GetAxis(string axisName)
         {
@@ -92,110 +81,10 @@ namespace MotionCard.Core
 
         #region Axis
 
-        public void AbsoluteMove(string axisName, double targetPosition, Velocity velocity, bool waitStopped = true, double timeoutSeconds = double.PositiveInfinity, StopReason expectedStopReason = StopReason.Normal)
-        {
-            StartToFixedLengthMovement?.Invoke(axisName,targetPosition);
-            _axis[axisName].AbsoluteMove(targetPosition, velocity, waitStopped, timeoutSeconds, expectedStopReason);
-        }
-
-        public void CheckAxisArrived(string axisName)
-        {
-            _axis[axisName].CheckAxisArrived();
-        }
-
-        public void CLearAlarm(string axisName)
-        {
-
-            _axis[axisName].CLearAlarm();
-        }
-
-        public void Enable(string axisName, bool enable)
-        {
-
-            _axis[axisName].Enable(enable);
-        }
-
-        public double GetCurrentPosition(string axisName)
-        {
-
-            return _axis[axisName].GetCurrentPosition();
-        }
-
-        public StopReason GetStopReason(string axisName)
-        {
-
-            return _axis[axisName].GetStopReason();
-        }
-
-        public Velocity GetVelocity(string axisName)
-        {
-
-            return _axis[axisName].GetVelocity();
-        }
-
-        public bool HasHomed(string axisName)
-        {
-            StartToHome?.Invoke(axisName);
-            return _axis[axisName].HasHomed();
-        }
-
-        public void Home(string axisName)
-        {
-            _axis[axisName].Home();
-        }
-
-        public bool IsAlarming(string axisName)
-        {
-            return _axis[axisName].IsAlarming();
-        }
-
-        public bool IsEnabled(string axisName)
-        {
-            return _axis[axisName].IsEnabled();
-        }
-
-        public bool IsMoving(string axisName)
-        {
-            return _axis[axisName].IsMoving();
-        }
-
-        public bool IsOnLmtN(string axisName)
-        {
-            return _axis[axisName].IsOnLmtN();
-        }
-
-        public bool IsOnLmtP(string axisName)
-        {
-            return _axis[axisName].IsOnLmtP();
-        }
-
-        public bool IsOnOrg(string axisName)
-        {
-            return _axis[axisName].IsOnOrg();
-        }
-
-        public bool IsReady(string axisName)
-        {
-            return _axis[axisName].IsReady();
-        }
-
-        public void Jog(string axisName, Velocity velocity)
-        {
-            StartToJog?.Invoke(axisName);
-            _axis[axisName].Jog(velocity);
-        }
-
         public void MoveToCalibrationPosition(string axisName, string calibrationPositionName, Velocity velocity, bool waitStopped = true, double timeoutSeconds = double.PositiveInfinity, StopReason expectedStopReason = StopReason.Normal)
         {
             double positionValue = _axis[axisName].GetCalibrationPositionValue(axisName);
             _axis[axisName].AbsoluteMove(positionValue, velocity, waitStopped, timeoutSeconds, expectedStopReason);
-        }
-
-        public void RelativeMove(string axisName, double targetPosition, Velocity velocity, bool waitStopped = true, double timeoutSeconds = double.PositiveInfinity, StopReason expectedStopReason = StopReason.Normal)
-        {
-            double currPosition = GetCurrentPosition(axisName);
-            StartToFixedLengthMovement?.Invoke(axisName,targetPosition + currPosition);
-            _axis[axisName].RelativeMove(targetPosition, velocity, waitStopped, timeoutSeconds, expectedStopReason);
         }
 
         public void SetVelocity(string axisName, Velocity velocity)
@@ -205,7 +94,6 @@ namespace MotionCard.Core
 
         public void Stop(string axisName)
         {
-
             _axis[axisName].Stop();
         }
 
@@ -224,7 +112,6 @@ namespace MotionCard.Core
         {
             for (int i = 0; i < axes.Count; ++i)
             {
-
                 _axis[axes[i]].AbsoluteMove(positions[i], velocities[i], false);
             }
         }
@@ -243,26 +130,5 @@ namespace MotionCard.Core
         }
 
         #endregion Axis
-
-        #region IO
-
-        public void SetDOStatus(string doName, bool status)
-        {
-            StartToSetDOStatus?.Invoke(doName,status);
-            _dos[doName].SetStatus(status);
-        }
-
-        public bool GetDOStatus(string doName)
-        {
-            return _dos[doName].GetStatus();
-        }
-
-        public bool GetDIStatus(string diName)
-        {
-            return _dis[diName].GetStatus();
-        }
-
-        #endregion IO
-
     }
 }

@@ -2,6 +2,9 @@
 
 namespace MotionCard.Core.Definitions
 {
+    /// <summary>
+    /// 速度模型
+    /// </summary>
     public struct Velocity : ICloneable
     {
         /// <summary>

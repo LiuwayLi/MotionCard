@@ -14,3 +14,4 @@ D:\Code Repository\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCa
 D:\Code Repository\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.csproj.CopyComplete
 D:\Code Repository\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.dll
 D:\Code Repository\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.pdb
+D:\Code Repository\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.csproj.AssemblyReference.cache

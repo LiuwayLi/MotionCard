@@ -1,0 +1,18 @@
+﻿{
+  "Discription": null,
+  "AxisName": "C",
+  "CardNo": 0,
+  "AxisNo": 0,
+  "PulsesPerUnit": 0,
+  "AcceptablePositionError": 0.0,
+  "DebugVelocity": {
+    "Start": 0.0,
+    "Stop": 0.0,
+    "Max": 0.0,
+    "TimeS": 0.0,
+    "TimeAcc": 0.0,
+    "TimeDec": 0.0
+  },
+  "MaxVelocity": 0.0,
+  "CalibrationPositions": []
+}
