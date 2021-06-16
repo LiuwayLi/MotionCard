@@ -34,3 +34,19 @@ D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.csproj.C
 D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.csproj.CopyComplete
 D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.exe
 D:\Code Repository\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.pdb
+D:\Github\MotionCard\MotionCard.Core\TestApp\bin\Debug\TestApp.exe.config
+D:\Github\MotionCard\MotionCard.Core\TestApp\bin\Debug\TestApp.exe
+D:\Github\MotionCard\MotionCard.Core\TestApp\bin\Debug\TestApp.pdb
+D:\Github\MotionCard\MotionCard.Core\TestApp\bin\Debug\HZH_Controls.dll
+D:\Github\MotionCard\MotionCard.Core\TestApp\bin\Debug\MotionCard.Core.dll
+D:\Github\MotionCard\MotionCard.Core\TestApp\bin\Debug\Newtonsoft.Json.dll
+D:\Github\MotionCard\MotionCard.Core\TestApp\bin\Debug\MotionCard.Core.pdb
+D:\Github\MotionCard\MotionCard.Core\TestApp\bin\Debug\Newtonsoft.Json.xml
+D:\Github\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.csprojAssemblyReference.cache
+D:\Github\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.Form1.resources
+D:\Github\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+D:\Github\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+D:\Github\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+D:\Github\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+D:\Github\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.exe
+D:\Github\MotionCard\MotionCard.Core\TestApp\obj\Debug\TestApp.pdb

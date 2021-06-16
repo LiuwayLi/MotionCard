@@ -31,11 +31,6 @@ namespace MotionUctrls
             }
         }
 
-
-
-
-
-
         public AxisUctrl(string axisName)
         {
             InitializeComponent();

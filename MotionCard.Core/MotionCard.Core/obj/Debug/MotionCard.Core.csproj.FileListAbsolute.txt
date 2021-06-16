@@ -15,3 +15,12 @@ D:\Code Repository\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCa
 D:\Code Repository\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.dll
 D:\Code Repository\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.pdb
 D:\Code Repository\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.csproj.AssemblyReference.cache
+D:\Github\MotionCard\MotionCard.Core\MotionCard.Core\bin\Debug\MotionCard.Core.dll
+D:\Github\MotionCard\MotionCard.Core\MotionCard.Core\bin\Debug\MotionCard.Core.pdb
+D:\Github\MotionCard\MotionCard.Core\MotionCard.Core\bin\Debug\Newtonsoft.Json.dll
+D:\Github\MotionCard\MotionCard.Core\MotionCard.Core\bin\Debug\Newtonsoft.Json.xml
+D:\Github\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.csprojAssemblyReference.cache
+D:\Github\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.csproj.CoreCompileInputs.cache
+D:\Github\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.csproj.CopyComplete
+D:\Github\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.dll
+D:\Github\MotionCard\MotionCard.Core\MotionCard.Core\obj\Debug\MotionCard.Core.pdb
